@@ -11,4 +11,8 @@ export class AppComponent {
   ngOnInit(): void{
     this.title = "Hello from BridgeLabz.";
   }
+  onClick($event : MouseEvent) {
+    console.log("Save button is clicked!", $event);
+    window.open(this.imgUrl, "_blank");
+  }
 }
